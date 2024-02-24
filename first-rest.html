@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Panel -->
+  <nav class="navbar navbar-expand-lg border-bottom">
+    <div class="container">
+      <!-- Все элементы в одном навбаре -->
+      <!-- Лого -->
+      <a class="navbar-brand" href="index.html"><img src="Wolt-Logo.png" alt="Logo" width="70" height="30"
+          class="d-inline-block align-text-top"></a>
+
+      <!-- Лого локации -->
+      <a class="navbar-brand" href="#"><img src="Logooo.png" alt="Лого локации" width="45" height="24"
+          class="d-inline-block align-text-top">Астана</a>
+      <!-- Поисковая строка -->
+      <form class="form-inline">
+        <input class="form-control mr-2 rounded-pill" type="search" placeholder="Поиск в Wolt" aria-label="Поиск">
+      </form>
+      <!-- Войти и Зарегистрироваться -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Войти</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Зарегистрироваться</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    <div class="rest-title container-fluid">
+      <h1 class="display-3"> Lepim & Varim Dostyk Plaza</h1>
+      <h1>Попробуй, какими могут быть пельмени</h1>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Открыто до 23:45</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Пока нет оценок</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#more-modal" href="#"><b>Подробнее</b></a>
+            <div class="modal fade" id="more-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel"> Lepim & Varim Dostyk Plaza</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Попробуй, какими могут быть пельмени</p>
+                    <h5>Адрес</h5>
+                    <p>улица Манаса, 71<br>
+                    050000 Алматы</p>
+                    <h5>Время работы</h5>
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <p>Понедельник<br>
+                          Вторник<br>
+                          Среда<br>
+                          Четверг<br>
+                          Пятница<br>
+                          Суббота<br>
+                          Воскресенье</p>
+                        </div>
+                        <div class="col-md-6">
+                          <p>08:00–00:00</br>
+                            08:00–00:00<br>
+                            08:00–00:00<br>
+                            08:00–00:00<br>
+                            08:00–00:00<br>
+                            09:00–00:00<br>
+                            09:00–00:00</p>
+                        </div>
+                      </div>
+                    </div>
+                    <h5>Контакты</h5>
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <p>Номер телефона<br>
+                            Cайт<br>
+                            Поддержка Wolt<br></p>
+                        </div>
+                        <div class="col-md-6">
+                          <p>+7777777777<br>
+                            <a href="#">Instagram</a><br>
+                            Чат со службой поддержки<br></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          <a class="nav-link" href="#">Закажите вместе</a>
+        </span>
+      </div>
+    </div>
+  </nav>
+  <ul class="wolt-nav nav mt-3 ms-3">
+    <li class="nav-item">
+      <a class="nav-link wolt-active" aria-current="page" href="#rest-blin"><b>САЛАТЫ 🥗</b></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link wolt-inactive" href="#rest-bulochki">СУПЫ 🍲</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link wolt-inactive" href="#rest-deserts">СВЕЖИЕ ПЕЛЬМЕНИ 🥟</a>
+    </li>
+  </ul>
+  <div id="cart" class="ms-3 mt-3">
+    <h3><b>Корзина</b></h3>
+    <ul id="cart-list"></ul>
+    <p id="total-cost">Общая стоимость: 0 KZT</p>
+  </div>
+  
+  <!-- блины -->
+  <nav id="rest-blin" class="navbar bg-body-tertiary ms-3 mt-3">
+    <div class="container-fluid">
+      <h3><b>САЛАТЫ 🥗</b></h3>
+    </div>
+  </nav>
+  <div class="container-fluid mb-5 ms-3">
+    <div class="row">
+      <!-- salad -->
+      <div class="card mb-4 ms-3" style="max-width: 470px;">
+        <a data-bs-toggle="modal" data-bs-target="#aboutfood" href="">
+          <div class="row g-0">
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Коул Слоу</h5>
+                <p>капуста красная, морковь, сок лимона, майонез</p>
+                <p class="card-text"></p>
+                <p class="card-text"><small class="text-body-secondary">1100 KZT</small></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img src="restsalad1.avif" class="img-fluid rounded-start mt-2" alt="..." height="110px" >
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="modal fade" id="aboutfood" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="card", style="width: 700px;">
+                <img src="restsalad1.avif" class="card-img-top" alt="...">
+                <div class="card-body">
+                 <hr>
+                  <h5 class="card-title">Коул Слоу</h5>
+                  <p>1100</p>
+                  <p class="card-text">капуста красная, морковь, сок лимона, майонез</p>
+                  <a href="first-rest.html" class="btn btn-primary">Close</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="card mb-4 ms-3" style="max-width: 470px;">
+        <a data-bs-toggle="modal" data-bs-target="#aboutfood2" href="">
+          <div class="row g-0">
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Новогодний</h5>
+                <p>Курица, картофель, морковь, яйцо, огурцы соленые, огурцы свежие, петрушка, майонез</p>
+                <p class="card-text"></p>
+                <p class="card-text"><small class="text-body-secondary">1300 KZT</small></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+               <img src = "restsalad3.avif" class="img-fluid rounded-start mt-2" alt="..." height="110px" >
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="modal fade" id="aboutfood2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <div class="card", style="width: 700px;">
+                    <img src="restsalad3.avif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                     <hr>
+                      <h5 class="card-title">Новогодний</h5>
+                      <p>1300 KZT</p>
+                      <p class="card-text">Курица, картофель, морковь, яйцо, огурцы соленые, огурцы свежие, петрушка, майонез</p>
+                      <a href="first-rest.html" class="btn btn-primary">Close</a>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Винегрет -->
+      <div class="card mb-4 ms-3" style="max-width: 470px;">
+        <a data-bs-toggle="modal" data-bs-target="#aboutfood3" href="">
+          <div class="row g-0">
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Винегрет</h5>
+                <p>Свекла, морковь, маринованная капуста, картофель, соленые огурцы, растительное масло</p>
+                <p class="card-text"></p>
+                <p class="card-text"><small class="text-body-secondary">1100 KZT</small></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+               <img src="restsalad2.avif" class="img-fluid rounded-start mt-2" alt="..." height="110px" >
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="modal fade" id="aboutfood3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <div class="card", style="width: 700px;">
+                    <img src="restsalad2.avif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                     <hr>
+                      <h5 class="card-title">Винегрет</h5>
+                      <p>1100 KZT</p>
+                      <p class="card-text">Свекла, морковь, маринованная капуста, картофель, соленые огурцы, растительное масло</p>
+                      <a href="first-rest.html" class="btn btn-primary">Close</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- блины конец -->
+  <!-- булочки -->
+  <nav id="rest-bulochki" class="navbar bg-body-tertiary ms-3 mt-3">
+    <div class="container-fluid">
+      <h3><b>СУПЫ 🍲</b></h3>
+    </div>
+  </nav>
+  <div class="container-fluid mb-5 ms-3">
+    <div class="row">
+      <!-- Булочка с маком -->
+      <div class="card mb-4 ms-3" style="max-width: 470px;">
+        <a data-bs-toggle="modal" data-bs-target="#aboutfood4" href="">
+          <div class="row g-0">
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">The Борщ</h5>
+                <p>Со сметаной</p>
+                <p class="card-text"></p>
+                <p class="card-text"><small class="text-body-secondary">1100 KZT</small></p>
+              </div>
+            </div>
+            <div class="col-md-4 mt-2">
+              <img src="sun1.avif" class="img-fluid rounded-start" alt="..." height="110px">
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="modal fade" id="aboutfood4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <div class="card", style="width: 700px;">
+                    <img src="sun1.avif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                     <hr>
+                      <h5 class="card-title">The Борщ</h5>
+                      <p>1100 KZT</p>
+                      <p class="card-text">Со сметаной</p>
+                      <a href="first-rest.html" class="btn btn-primary">Close</a>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Ватрушка с творогом -->
+      <div class="card mb-4 ms-3" style="max-width: 470px;">
+        <a data-bs-toggle="modal" data-bs-target="#aboutfood5" href="">
+          <div class="row g-0">
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Къяшик Аш</h5>
+                <p>говяжий бульон, зелень, мини пельмени "говядина + курица"</p>
+                <p class="card-text"></p>
+                <p class="card-text"><small class="text-body-secondary">1500 KZT</small></p>
+              </div>
+            </div>
+            <div class="col-md-4 mt-2">
+              <img src="sun2.avif" class="img-fluid rounded-start" alt="..." height="110px">
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="modal fade" id="aboutfood5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <div class="card", style="width: 700px;">
+                    <img src="sun2.avif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                     <hr>
+                      <h5 class="card-title">Къяшик Аш</h5>
+                      <p>1500 KZT</p>
+                      <p class="card-text">говяжий бульон, зелень, мини пельмени "говядина + курица"</p>
+                      <a href="first-rest.html" class="btn btn-primary">Close</a>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Синнабон с корицей -->
+      <div class="card mb-4 ms-3" style="max-width: 470px;">
+        <a data-bs-toggle="modal" data-bs-target="#aboutfood6" href="">
+          <div class="row g-0">
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Куриный суп 2.0</h5>
+                <p>ульон куриный, лапша домашняя, морковь, фрикадельки</p>
+                <p class="card-text"></p>
+                <p class="card-text"><small class="text-body-secondary">1500 KZT</small></p>
+              </div>
+            </div>
+            <div class="col-md-4 mt-2">
+              <img src="sun3.avif" class="img-fluid rounded-start" alt="..." height="110px">
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="modal fade" id="aboutfood6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <div class="card", style="width: 700px;">
+                    <img src="sun3.avif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                     <hr>
+                      <h5 class="card-title">Куриный суп 2.0</h5>
+                      <p>1500 KZT</p>
+                      <p class="card-text">ульон куриный, лапша домашняя, морковь, фрикадельки</p>
+                      <a href="first-rest.html" class="btn btn-primary">Close</a>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- булочки конец -->
+  <!-- десерты -->
+
+
+
+
+  <nav id="rest-deserts" class="navbar bg-body-tertiary ms-3 mt-3">
+    <div class="container-fluid">
+      <h3><b>СВЕЖИЕ ПЕЛЬМЕНИ 🥟</b></h3>
+    </div>
+  </nav>
+  <div class="container-fluid mb-5 ms-3">
+    <div class="row">
+      <!-- Торт Творожный -->
+      <div class="card mb-4 ms-3" style="max-width: 470px;">
+        <a data-bs-toggle="modal" data-bs-target="#aboutfood7" href="">
+          <div class="row g-0">
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Красная жара 🌶️</h5>
+                <p>острая курица</p>
+                <p class="card-text"></p>
+                <p class="card-text"><small class="text-body-secondary">1900 KZT</small></p>
+              </div>
+            </div>
+            <div class="col-md-4 mt-2">
+              <img src="pelmen1.avif" class="img-fluid rounded-start" alt="..." height="110px">
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="modal fade" id="aboutfood7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+            <div class="card", style="width: 700px;">
+                <img src="pelmen1.avif" class="card-img-top" alt="...">
+                <div class="card-body">
+                 <hr>
+                  <h5 class="card-title">Красная жара 🌶️</h5>
+                  <p>1900 KZT</p>
+                  <p class="card-text">острая курица</p>
+                  <a href="first-rest.html" class="btn btn-primary">Close</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Пирожное Наполеон -->
+      <div class="card mb-4 ms-3" style="max-width: 470px;">
+        <a data-bs-toggle="modal" data-bs-target="#aboutfood8" href="">
+          <div class="row g-0">
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">В ДЕСЯТКУ 10 шт</h5>
+                <p>твороженные вареники с сметанным соусом</p>
+                <p class="card-text"></p>
+                <p class="card-text"><small class="text-body-secondary">1700 KZT</small></p>
+              </div>
+            </div>
+            <div class="col-md-4 mt-2">
+              <img src="pelmen2.avif" class="img-fluid rounded-start" alt="..." height="110px">
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="modal fade" id="aboutfood8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <div class="card", style="width: 700px;">
+                <img src="pelmen2.avif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                 <hr>
+                  <h5 class="card-title">В ДЕСЯТКУ 10 шт</h5>
+                  <p>1700 KZT</p>
+                  <p class="card-text">твороженные вареники с сметанным соусом</p>
+                  <a href="first-rest.html" class="btn btn-primary">Close</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Пирожное Муравейник -->
+      <div class="card mb-4 ms-3" style="max-width: 470px;">
+        <a data-bs-toggle="modal" data-bs-target="#aboutfood9" href="">
+          <div class="row g-0">
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Конечно, Уася!</h5>
+                <p>Баранина + кинза</p>
+                <p class="card-text"></p>
+                <p class="card-text"><small class="text-body-secondary">2100 KZT</small></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img src="pelmen3.avif" class="img-fluid rounded-start" alt="..." height="110px">
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="modal fade" id="aboutfood9" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <div class="card", style="width: 700px;">
+                <img src="pelmen3.avif" class="card-img-top" alt="...">
+                <div class="card-body">
+                 <hr>
+                  <h5 class="card-title">Конечно, Уася!</h5>
+                  <p>2100 KZT</p>
+                  <p class="card-text">Баранина + кинза</p>
+                  <a href="first-rest.html" class="btn btn-primary">Close</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- Footer -->
+<footer class="text-center text-lg-start bg-white text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3 text-secondary"></i>Company name
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer content. Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Angular</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">React</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Vue</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Laravel</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Pricing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
+            <p>
+              <i class="fas fa-envelope me-3 text-secondary"></i>
+              info@example.com
+            </p>
+            <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+      © 2023 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  
+    <!--Script Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+</html>

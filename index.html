@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wolt</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+</head>
+
+<body>
+
+  <!-- Panel -->
+  <nav class="navbar navbar-expand-lg border-bottom">
+    <div class="container">
+      <!-- Все элементы в одном навбаре -->
+      <!-- Лого -->
+      <a class="navbar-brand" href="#"><img src="Wolt-Logo.png" alt="Logo" width="70" height="30"
+          class="d-inline-block align-text-top"></a>
+
+      <!-- Лого локации -->
+      <a class="navbar-brand" href="#"><img src="Logooo.png" alt="Лого локации" width="45" height="24"
+          class="d-inline-block align-text-top">Астана</a>
+      <!-- Поисковая строка -->
+      <form class="form-inline">
+        <input class="form-control mr-2 rounded-pill" type="search" placeholder="Поиск в Wolt" aria-label="Поиск">
+      </form>
+      <!-- Войти и Зарегистрироваться -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Войти</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Зарегистрироваться</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Navigation -->
+  <br>
+  <nav class="nav">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+          <button type="button" class="btn btn-light mx-3">
+            <svg width="20" viewBox="0 0 24 24" class="NavigationLinkWithLocale__icon" fill="currentColor">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M21.517 8.648A6.656 6.656 0 0014.87 2a1 1 0 110-2 8.658 8.658 0 018.648 8.648 1 1 0 11-2 0zM7.854 3.868c.443 0 .8.214.8.478L8.65 5.532a.25.25 0 01-.25.25H4.12a.25.25 0 01-.25-.25V4.346c0-.264.36-.478.8-.478h.346a.248.248 0 00.248-.25v-2.14a1 1 0 012 0V3.62a.25.25 0 00.25.248h.34zm.8 14.069h-4.78a.75.75 0 000 1.5h4.78a.75.75 0 000-1.5zm0-2.802a.75.75 0 00.75-.75H9.4a.75.75 0 00-.746-.75h-4.78a.75.75 0 000 1.5h4.78zm-4.78-4.302h4.78a.75.75 0 000-1.5h-4.78a.75.75 0 100 1.5zm18.42 10.678H23a1 1 0 010 2H1a1 1 0 110-2h.211a.25.25 0 00.25-.25V7.693a.98.98 0 01.979-.98h7.648a.98.98 0 01.978.98V21.26c0 .139.112.25.25.25h.912a.25.25 0 00.25-.25v-7.832c0-.263.214-.477.478-.477h2.868c.264 0 .478.214.478.477v7.832c0 .139.112.25.25.25h1.414a.249.249 0 00.248-.25v-7.832c0-.263.214-.477.478-.477h2.874c.264 0 .478.214.478.477v7.832c0 .139.112.25.25.25zM14.869 6.172a2.48 2.48 0 012.476 2.477 1 1 0 102 0 4.481 4.481 0 00-4.476-4.477 1 1 0 100 2z">
+              </path>
+            </svg>
+            Рекомендации
+          </button>
+          <button type="button" class="btn btn-primary mx-3">
+            <svg width="20" viewBox="0 0 24 24" class="NavigationLinkWithLocale__icon" fill="currentColor">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M10 1a1 1 0 112 0v5a4.009 4.009 0 01-2.667 3.772.5.5 0 00-.333.471V23a1 1 0 11-2 0V10.243a.5.5 0 00-.333-.471A4.009 4.009 0 014 6V1a1 1 0 112 0v5c0 .522.205 1.025.571 1.398A.251.251 0 007 7.223V1a1 1 0 112 0v6.225a.251.251 0 00.429.175c.367-.374.572-.877.571-1.4V1zM20.5.75a.75.75 0 00-.75-.75C17.418 0 15.064 6.055 15 13.243v.021c.004.686.563 1.24 1.25 1.236H18a.5.5 0 01.5.5v8a1 1 0 102 0V.75z">
+              </path>
+            </svg>
+            Рестораны
+          </button>
+          <button type="button" class="btn btn-light mx-3">
+            <svg width="20" viewBox="0 0 24 24" fill="currentColor" class="NavigationLinkWithLocale__icon">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M.646 0A.646.646 0 0 0 0 .646V4.5a3.5 3.5 0 0 0 6.25 2.165A3.494 3.494 0 0 0 9 8c1.116 0 2.11-.522 2.75-1.335a3.498 3.498 0 0 0 5.75-.362A3.5 3.5 0 0 0 24 4.5V.647A.646.646 0 0 0 23.354 0h-5.708a.647.647 0 0 0-.146.017.647.647 0 0 0-.146-.017H.646ZM2 2v2.5a1.5 1.5 0 1 0 3 0V2H2Zm17 0v2.5a1.5 1.5 0 0 0 3 0V2h-3Zm-6 2.5V2h3v2.5a1.5 1.5 0 0 1-3 0ZM7.5 2v2.5a1.5 1.5 0 1 0 3 0V2h-3Z">
+              </path>
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M1 22V8.45a3.491 3.491 0 0 0 2 1.015V22h8V12h7.5v10H21V9.465a3.49 3.49 0 0 0 2-1.016V22a1 1 0 1 1 0 2H1a1 1 0 1 1 0-2Zm12 0h3.5v-8H13v8Z">
+              </path>
+              <path d="M5.5 12a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3Z"></path>
+            </svg>
+            Магазины
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- Menu glavnoe-->
+  <main class="main">
+    <div class="container">
+      <div class="row my-5 d-flex align-items-center">
+        <div class="col-6">
+          <h1>Рестораны - Астана</h1>
+        </div>
+        <div class="col-6 d-flex flex-row-reverse align-items-center">
+          <button type="button" class="btn btn-outline-info mx-3">
+            <svg width="20" viewBox="0 0 20 21" class="sc-82836862-2 dIUjZn">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M5.41703 10.7133V17.085C5.41703 17.306 5.50483 17.5179 5.66111 17.6742C5.81739 17.8305 6.02935 17.9183 6.25037 17.9183C6.47138 17.9183 6.68334 17.8305 6.83962 17.6742C6.9959 17.5179 7.0837 17.306 7.0837 17.085L7.0837 10.7133C7.68556 10.5338 8.2134 10.1648 8.58871 9.66122C8.96402 9.15763 9.16675 8.54635 9.16675 7.91829C9.16675 7.29024 8.96402 6.67896 8.58871 6.17537C8.2134 5.67179 7.68556 5.3028 7.0837 5.12329V2.91829C7.0837 2.69728 6.9959 2.48532 6.83962 2.32904C6.68334 2.17276 6.47138 2.08496 6.25037 2.08496C6.02935 2.08496 5.81739 2.17276 5.66111 2.32904C5.50483 2.48532 5.41703 2.69728 5.41703 2.91829V5.12329C4.81518 5.3028 4.28734 5.67179 3.91203 6.17537C3.53672 6.67896 3.33398 7.29024 3.33398 7.91829C3.33398 8.54635 3.53672 9.15763 3.91203 9.66122C4.28734 10.1648 4.81518 10.5338 5.41703 10.7133ZM7.2897 7.22383C7.42706 7.42939 7.50037 7.67107 7.50037 7.91829C7.50037 8.24981 7.36867 8.56776 7.13425 8.80218C6.89983 9.0366 6.58189 9.16829 6.25037 9.16829C6.00314 9.16829 5.76147 9.09498 5.5559 8.95763C5.35034 8.82028 5.19013 8.62506 5.09552 8.39665C5.00091 8.16824 4.97615 7.91691 5.02439 7.67443C5.07262 7.43195 5.19167 7.20923 5.36648 7.03441C5.5413 6.85959 5.76403 6.74054 6.0065 6.69231C6.24898 6.64408 6.50031 6.66884 6.72872 6.76344C6.95713 6.85805 7.15235 7.01827 7.2897 7.22383ZM12.917 15.2966L12.917 17.085C12.917 17.306 13.0048 17.5179 13.1611 17.6742C13.3174 17.8305 13.5294 17.9183 13.7504 17.9183C13.9714 17.9183 14.1833 17.8305 14.3396 17.6742C14.4959 17.5179 14.5837 17.306 14.5837 17.085V15.2966C15.1856 15.1171 15.7134 14.7481 16.0887 14.2445C16.464 13.741 16.6667 13.1297 16.6667 12.5016C16.6667 11.8736 16.464 11.2623 16.0887 10.7587C15.7134 10.2551 15.1856 9.88613 14.5837 9.70663V2.91829C14.5837 2.69728 14.4959 2.48532 14.3396 2.32904C14.1833 2.17276 13.9714 2.08496 13.7504 2.08496C13.5294 2.08496 13.3174 2.17276 13.1611 2.32904C13.0048 2.48532 12.917 2.69728 12.917 2.91829V9.70663C12.3152 9.88613 11.7873 10.2551 11.412 10.7587C11.0367 11.2623 10.834 11.8736 10.834 12.5016C10.834 13.1297 11.0367 13.741 11.412 14.2445C11.7873 14.7481 12.3152 15.1171 12.917 15.2966ZM14.7897 11.8072C14.9271 12.0127 15.0004 12.2544 15.0004 12.5016C15.0004 12.8331 14.8687 13.1511 14.6342 13.3855C14.3998 13.6199 14.0819 13.7516 13.7504 13.7516C13.5031 13.7516 13.2615 13.6783 13.0559 13.541C12.8503 13.4036 12.6901 13.2084 12.5955 12.98C12.5009 12.7516 12.4762 12.5002 12.5244 12.2578C12.5726 12.0153 12.6917 11.7926 12.8665 11.6177C13.0413 11.4429 13.264 11.3239 13.5065 11.2756C13.749 11.2274 14.0003 11.2522 14.2287 11.3468C14.4571 11.4414 14.6524 11.6016 14.7897 11.8072Z">
+              </path>
+            </svg>
+          </button>
+          Сортировка по Рекомендованные
+        </div>
+      </div>
+      <div class="categories">
+        <div class="row">
+          <h2>Категории</h2>
+        </div>
+
+        <div class="row owl-carousel">
+          <div class="col-lg-3 col-md-6 col-sm-12 m-2">
+            <div class="card" style="width: 18rem">
+              <img src="Burger.avif" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Бургеры</h5>
+                <p class="card-text">12 заведений</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 m-2">
+            <div class="card" style="width: 18rem">
+              <img src="pizza.avif" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Пицца</h5>
+                <p class="card-text">23 заведений</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 m-2">
+            <div class="card" style="width: 18rem">
+              <img src="desert.avif" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Десерты</h5>
+                <p class="card-text">34 заведений</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 m-2">
+            <div class="card" style="width: 18rem">
+              <img src="breakfast.avif" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Завтрак</h5>
+                <p class="card-text">45 заведений</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 m-2">
+            <div class="card" style="width: 18rem">
+              <img src="sushi.avif" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Суши</h5>
+                <p class="card-text">56 заведений</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 m-2">
+            <div class="card" style="width: 18rem">
+              <img src="salad.avif" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Салаты</h5>
+                <p class="card-text">67 заведений</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 m-2">
+            <div class="card" style="width: 18rem">
+              <img src="soup.avif" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Супы</h5>
+                <p class="card-text">78 заведений</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 m-2">
+            <div class="card" style="width: 18rem">
+              <img src="doner.avif" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Донер</h5>
+                <p class="card-text">89 заведений</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 m-2">
+            <div class="card" style="width: 18rem">
+              <img src="cafe.avif" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Кафе</h5>
+                <p class="card-text">90 заведений</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="restaraunts">
+        <div class="row">
+          <h2>Все рестораны</h2>
+        </div>
+        <div class="row d-flex justify-content-center gap-4">
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12"> 
+            <a href="first-rest.html">
+
+              <div class="card" style="width: 18rem; margin: 0 auto">
+                <img src="rest1.avif" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Lepim & Varim Dostyk Plaza</h5></a> 
+                  <p class="card-text">
+                    Городское Центральное кафе
+                    <br>
+                    Лауреат Премии Wolt-2023
+                  </p>
+                  <p class="card-delivery-price">
+                    <svg width="35" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 15"
+                      class="sc-5f3118f0-32 jrYyxA">
+                      <title>Wolt+</title>
+                      <rect width="22.207" height="15" rx="7.5" fill="skyblue"></rect>
+                      <path
+                        d="M18.203 7.388a.281.281 0 0 0-.282-.33H15.81l.377-2.177a.24.24 0 0 0-.235-.281h-.413a.238.238 0 0 0-.235.198l-.398 2.25h-2.21a.281.281 0 0 0-.281.233l-.06.336a.282.282 0 0 0 .282.329h2.116l-.382 2.172a.236.236 0 0 0 .133.26.238.238 0 0 0 .101.022h.414a.237.237 0 0 0 .235-.197l.397-2.25h2.223a.281.281 0 0 0 .282-.232l.047-.333ZM10.64 4.32c-.201 0-.38.01-.469.019-.177.018-.237.184-.224.348.186 2.37-.341 5.128-.94 5.128-.447 0-.57-1.29-.57-2.436 0-.678.039-1.33.055-1.908.006-.214-.073-.254-.228-.272a1.745 1.745 0 0 0-.642.022c-.179.04-.221.185-.41.63a70.121 70.121 0 0 1-1.848 3.991c-.24-1.783.068-3.51.33-4.773.036-.174-.048-.276-.191-.274-.272.005-.688.013-.876.135-.176.114-.243.236-.293.49-.29 1.444-.48 3.257-.188 4.658.063.303.134.375.263.453.13.08.684.15.9.15.244 0 .468-.065.654-.38.393-.669.71-1.336 1.305-2.623.06 1.676.3 2.991 1.49 2.991 1.575 0 2.593-3.899 2.593-5.775-.002-.493-.25-.575-.71-.575Z">
+                      </path>
+                    </svg>
+                    <span class="sc-5f3118f0-40 sc-5f3118f0-41 dEzDkK jQiVIh">0&nbsp;KZT</span>
+                    <span class="currency-symbol">.₸</span>
+                    <span class="transparent-symbol">₸₸.</span>
+                    <svg width="15" viewBox="0 0 24 24" class="sc-5f3118f0-31 bNQTtc">
+                      <path
+                        d="M12 0c6.6 0 12 5.4 12 12s-5.4 12-12 12S0 18.6 0 12 5.4 0 12 0zm0 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.7 12.2c.4.3.6.8.3 1.3-1.2 1.9-2.8 3-5 3.1-2.2-.1-3.8-1-4.8-2.9-.2-.5-.2-.9.1-1.3.2-.3.6-.4 1-.3.4.1.5.4.7.7.7 1.3 1.9 1.9 3.3 1.7 1.2-.1 2-.7 2.8-1.6.1-.2.2-.4.4-.5.2-.4.7-.5 1.2-.2zM16 7c1 0 1.9.8 1.9 1.9s-.8 1.9-1.9 1.9c-1 0-1.9-.8-1.9-1.9 0-1.1.8-1.9 1.9-1.9zM8 7c1 0 1.9.8 1.9 1.9s-.8 1.8-1.9 1.8c-1.1 0-1.9-.8-1.9-1.9C6.1 7.8 7 7 8 7z"
+                        fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"></path>
+                    </svg>
+                    <span>8.8</span>
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+            <a href="#">
+            <div class="card" style="width: 18rem; margin: 0 auto">
+              <img src="rest2.avif" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Arizona Coffee Panfilov</a>
+                  </h5>
+                <p class="card-text">
+                  Пивной Ресторан • Стейк • Шашлык
+                </p>
+                <p class="card-delivery-price">
+                  <svg width="35" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 15" class="sc-5f3118f0-32 jrYyxA">
+                    <title>Wolt+</title>
+                    <rect width="22.207" height="15" rx="7.5" fill="skyblue"></rect>
+                    <path
+                      d="M18.203 7.388a.281.281 0 0 0-.282-.33H15.81l.377-2.177a.24.24 0 0 0-.235-.281h-.413a.238.238 0 0 0-.235.198l-.398 2.25h-2.21a.281.281 0 0 0-.281.233l-.06.336a.282.282 0 0 0 .282.329h2.116l-.382 2.172a.236.236 0 0 0 .133.26.238.238 0 0 0 .101.022h.414a.237.237 0 0 0 .235-.197l.397-2.25h2.223a.281.281 0 0 0 .282-.232l.047-.333ZM10.64 4.32c-.201 0-.38.01-.469.019-.177.018-.237.184-.224.348.186 2.37-.341 5.128-.94 5.128-.447 0-.57-1.29-.57-2.436 0-.678.039-1.33.055-1.908.006-.214-.073-.254-.228-.272a1.745 1.745 0 0 0-.642.022c-.179.04-.221.185-.41.63a70.121 70.121 0 0 1-1.848 3.991c-.24-1.783.068-3.51.33-4.773.036-.174-.048-.276-.191-.274-.272.005-.688.013-.876.135-.176.114-.243.236-.293.49-.29 1.444-.48 3.257-.188 4.658.063.303.134.375.263.453.13.08.684.15.9.15.244 0 .468-.065.654-.38.393-.669.71-1.336 1.305-2.623.06 1.676.3 2.991 1.49 2.991 1.575 0 2.593-3.899 2.593-5.775-.002-.493-.25-.575-.71-.575Z">
+                    </path>
+                  </svg>
+                  <span class="sc-5f3118f0-40 sc-5f3118f0-41 dEzDkK jQiVIh">0&nbsp;KZT</span>
+                  <span class="currency-symbol">.₸</span>
+                  <span class="transparent-symbol">₸₸.</span>
+                  <svg width="15" viewBox="0 0 24 24" class="sc-5f3118f0-31 bNQTtc">
+                    <path
+                      d="M12 0c6.6 0 12 5.4 12 12s-5.4 12-12 12S0 18.6 0 12 5.4 0 12 0zm0 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.7 12.2c.4.3.6.8.3 1.3-1.2 1.9-2.8 3-5 3.1-2.2-.1-3.8-1-4.8-2.9-.2-.5-.2-.9.1-1.3.2-.3.6-.4 1-.3.4.1.5.4.7.7.7 1.3 1.9 1.9 3.3 1.7 1.2-.1 2-.7 2.8-1.6.1-.2.2-.4.4-.5.2-.4.7-.5 1.2-.2zM16 7c1 0 1.9.8 1.9 1.9s-.8 1.9-1.9 1.9c-1 0-1.9-.8-1.9-1.9 0-1.1.8-1.9 1.9-1.9zM8 7c1 0 1.9.8 1.9 1.9s-.8 1.8-1.9 1.8c-1.1 0-1.9-.8-1.9-1.9C6.1 7.8 7 7 8 7z"
+                      fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"></path>
+                  </svg>
+                  <span>8.6</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+            <a href="#">
+            <div class="card" style="width: 18rem; margin: 0 auto">
+              <img src="rest3.avif" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  PAUL Almaly</a>
+                </h5>
+                <p class="card-text">ЧайLa Astana - With love from Almaty</p>
+                <p class="card-delivery-price">
+                  <svg width="35" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 15" class="sc-5f3118f0-32 jrYyxA">
+                    <title>Wolt+</title>
+                    <rect width="22.207" height="15" rx="7.5" fill="skyblue"></rect>
+                    <path
+                      d="M18.203 7.388a.281.281 0 0 0-.282-.33H15.81l.377-2.177a.24.24 0 0 0-.235-.281h-.413a.238.238 0 0 0-.235.198l-.398 2.25h-2.21a.281.281 0 0 0-.281.233l-.06.336a.282.282 0 0 0 .282.329h2.116l-.382 2.172a.236.236 0 0 0 .133.26.238.238 0 0 0 .101.022h.414a.237.237 0 0 0 .235-.197l.397-2.25h2.223a.281.281 0 0 0 .282-.232l.047-.333ZM10.64 4.32c-.201 0-.38.01-.469.019-.177.018-.237.184-.224.348.186 2.37-.341 5.128-.94 5.128-.447 0-.57-1.29-.57-2.436 0-.678.039-1.33.055-1.908.006-.214-.073-.254-.228-.272a1.745 1.745 0 0 0-.642.022c-.179.04-.221.185-.41.63a70.121 70.121 0 0 1-1.848 3.991c-.24-1.783.068-3.51.33-4.773.036-.174-.048-.276-.191-.274-.272.005-.688.013-.876.135-.176.114-.243.236-.293.49-.29 1.444-.48 3.257-.188 4.658.063.303.134.375.263.453.13.08.684.15.9.15.244 0 .468-.065.654-.38.393-.669.71-1.336 1.305-2.623.06 1.676.3 2.991 1.49 2.991 1.575 0 2.593-3.899 2.593-5.775-.002-.493-.25-.575-.71-.575Z">
+                    </path>
+                  </svg>
+                  <span class="sc-5f3118f0-40 sc-5f3118f0-41 dEzDkK jQiVIh">0 KZT</span>
+                  <span class="currency-symbol">.₸</span>
+                  <span class="transparent-symbol">₸₸.</span>
+                  <svg width="15" viewBox="0 0 24 24" class="sc-5f3118f0-31 bNQTtc">
+                    <path
+                      d="M12 0c6.6 0 12 5.4 12 12s-5.4 12-12 12S0 18.6 0 12 5.4 0 12 0zm0 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.7 12.2c.4.3.6.8.3 1.3-1.2 1.9-2.8 3-5 3.1-2.2-.1-3.8-1-4.8-2.9-.2-.5-.2-.9.1-1.3.2-.3.6-.4 1-.3.4.1.5.4.7.7.7 1.3 1.9 1.9 3.3 1.7 1.2-.1 2-.7 2.8-1.6.1-.2.2-.4.4-.5.2-.4.7-.5 1.2-.2zM16 7c1 0 1.9.8 1.9 1.9s-.8 1.9-1.9 1.9c-1 0-1.9-.8-1.9-1.9 0-1.1.8-1.9 1.9-1.9zM8 7c1 0 1.9.8 1.9 1.9s-.8 1.8-1.9 1.8c-1.1 0-1.9-.8-1.9-1.9C6.1 7.8 7 7 8 7z"
+                      fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"></path>
+                  </svg>
+                  <span>8.9</span>
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Footer -->
+<footer class="text-center text-lg-start bg-white text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3 text-secondary"></i>Company name
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Vue</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Laravel</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3 text-secondary"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+    © 2023 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+<script src="script.js"></script>
+  <!--Script Bootstrap-->
+  <!-- Owl Carousel JS -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

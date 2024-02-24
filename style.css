@@ -1,0 +1,42 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+
+  
+  .form-control .rounded-pill {
+    border-radius: 500px;
+  }
+  
+  button.btn-primary {
+    border-radius: 50px;
+    /* Задаем радиус скругления 50px, чтобы сделать кнопку овальной */
+    background-color: #007BFF;
+    /* Цвет кнопки при активном состоянии */
+    color: #fff;
+    /* Цвет текста при активном состоянии */
+  }
+  
+  button.btn-primary:hover {
+    background-color: #0056b3;
+    /* Цвет кнопки при наведении курсора */
+  }
+
+  
+
+  
+  .transparent-symbol {
+    opacity: 0.5;
+    /* Значение opacity может быть от 0 (полностью прозрачный) до 1 (полностью непрозрачный) */
+  }
+  
+  .owl-prev,
+.owl-next {
+  font-size: 2em;
+}
+
+/* Увеличиваем область, по которой можно нажать на кнопки */
+.owl-prev span,
+.owl-next span {
+  padding: 20px;
+}
